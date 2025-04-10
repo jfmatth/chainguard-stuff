@@ -1,9 +1,9 @@
 FROM cgr.dev/chainguard/python:latest-dev AS builder
 USER root
 
-# add UV
-RUN apk update
-RUN apk add uv
+# # add UV
+# RUN apk update
+# RUN apk add uv
 
 WORKDIR /app
 COPY pyproject.toml .
